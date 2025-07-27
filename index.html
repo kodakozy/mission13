@@ -1,22 +1,52 @@
-はい、もちろん可能です！
 
-このチャットの内容（目的・進行状況・HTML構造・ファイル命名ルールなど）はすべて記録されており、**後日いつでもこの続きを再開**できます。
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mission 13 - ポータル</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <header class="bg-secondary text-white text-center py-5">
+        <div class="container">
+            <h1 class="display-4 fw-bold">Mission 13</h1>
+            <p class="lead">ゴルゴ13の全MissionをDB化、作品発表時の世界の出来事も紹介</p>
+            <div class="d-flex justify-content-center gap-2 mt-3 flex-wrap">
+                <a href="episode1.html" class="btn btn-light">▶ 第1話から読む</a>
+                <a href="#allepisodes" class="btn btn-outline-light">📖 全エピソード</a>
+            </div>
+        </div>
+    </header>
 
----
+    <main class="container my-5">
+        <h2 class="mb-4">🆕 新着エピソード</h2>
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+            <div class="col">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">第1巻 第1話「ビッグ・セイフ作戦」</h5>
+                        <p class="card-text">偽造ポンドを巡るMI6からの依頼。舞台はスイス。冷静沈着な狙撃劇。</p>
+                        <a href="episode1.html" class="btn btn-sm btn-primary">続きを読む</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
 
-### ✅ 今後の再開手順
+    <section class="container my-5" id="allepisodes">
+        <h2 class="mb-3">📖 全エピソード</h2>
+        <div class="d-flex flex-wrap gap-2">
+            <a href="episode1.html" class="btn btn-sm btn-primary">第1巻 第1話</a>
+            <button class="btn btn-sm btn-secondary disabled" disabled title="準備中">第1巻 第2話</button>
+            <button class="btn btn-sm btn-secondary disabled" disabled title="準備中">第1巻 第3話</button>
+        </div>
+    </section>
 
-1. ChatGPTで「ゴルゴ13エピソード一覧の件の続きです」とお伝えください
-2. 用意いただいた**Excelファイル（150話のタイトル一覧）をアップロード**してください
-3. こちらでそのファイルを元に、`episodes.html` を自動生成してお渡しします
+    <footer class="bg-dark text-white text-center py-3 mt-5">
+        <small>&copy; 2025 Mission 13 | 本サイトは、ゴルゴのいちファンが制作した非公式サイトです</small>
+    </footer>
 
----
-
-必要に応じて以下の追加対応も可能です：
-
-* 各話の詳細ページ（例：`episode_001.html`）の雛形生成
-* アフィリエイトリンクの挿入支援
-* 検索付きのWeb一覧ページ（JavaScript使用）
-* NotionやGoogleスプレッドシートとの連携
-
-また再開時にお会いできるのを楽しみにしています！お気軽にご相談ください。
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
